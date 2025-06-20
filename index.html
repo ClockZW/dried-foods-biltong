@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRIED FOODS BILTONG</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('images/Screenshot 2025-06-20 040733.png') center center/cover no-repeat fixed;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .text-shadow {
+      text-shadow: 0 2px 16px rgba(0,0,0,0.85), 0 1.5px 6px 0 rgba(0,0,0,0.45);
+    }
+    .cc-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #dc2626;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #dc2626;
+      margin-right: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      border-radius: 2rem;
+      box-shadow: 0 10px 32px 0 rgba(220,38,38,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.05);
+      background: transparent;
+      z-index: 1;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+      will-change: transform;
+    }
+    .carousel-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 3rem 0;
+    }
+    .carousel-img {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      border: 4px solid #fecaca;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      margin-bottom: 2rem;
+      background: #fff;
+    }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .carousel-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #e5e7eb;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .carousel-dot.active {
+      background: #dc2626;
+    }
+    @media (max-width: 900px) {
+      .carousel-img {
+        max-width: 95vw;
+        height: 220px;
+      }
+      .carousel-slide {
+        padding: 1.5rem 0;
+      }
+      .carousel {
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Navigation Bar -->
+  <nav class="w-full shadow-sm sticky top-0 z-20 bg-transparent">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center gap-3">
+        <img src="images/BiltongStokkies.jpg" alt="DRIED FOODS BILTONG Logo" class="h-10 w-10 rounded-full object-cover border-2 border-gray-200" />
+        <span class="text-2xl font-bold tracking-widest text-white text-shadow">DRIED FOODS BILTONG</span>
+      </div>
+      <ul class="flex gap-8 text-base font-semibold">
+        <li><a href="#home" class="text-white text-shadow hover:text-red-300 transition">Home</a></li>
+        <li><a href="#about" class="text-white text-shadow hover:text-red-300 transition">About</a></li>
+        <li><a href="#contact" class="text-white text-shadow hover:text-red-300 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex-1 flex flex-col items-center justify-center text-center py-16 relative z-10">
+    <img src="images/Sliced_Biltong.jpg" alt="Hero Biltong" class="mx-auto rounded-2xl shadow-xl w-full max-w-lg object-cover border-4 border-red-100 mb-8 bg-white" />
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight text-shadow">DRIED FOODS BILTONG</h1>
+    <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto text-shadow">Taste the tradition of Zimbabwe's finest biltong. Crafted with passion, perfected over generations, and delivered fresh from Chitungwiza.</p>
+    <a href="#contact" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-bold text-lg shadow hover:bg-red-700 transition">Order Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 flex flex-col items-center justify-center relative z-10">
+    <div class="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 px-8 py-16">
+      <div class="flex-1 flex justify-center mb-8 md:mb-0">
+        <img src="images/Beef_jerky.jpg" alt="About Biltong" class="rounded-xl shadow-lg w-full max-w-xs object-cover border-2 border-red-100 bg-white" />
+      </div>
+      <div class="flex-1 flex flex-col items-center md:items-start">
+        <div class="text-5xl font-extrabold text-white mb-6 text-shadow text-center md:text-left">
+          <span class="bg-red-600 px-4 py-2 rounded-xl">ABOUT</span> DRIED FOODS BILTONG
+        </div>
+        <div class="text-xl text-white text-shadow text-center md:text-left font-semibold">
+          Founded in the heart of <span class="bg-red-600 px-2 py-1 rounded-lg">Chitungwiza</span>, <span class="bg-red-600 px-2 py-1 rounded-lg">DRIED FOODS BILTONG</span> is a fast-growing company dedicated to delivering the finest biltong to Zimbabwe and beyond.<br><br>
+          Our journey began with a simple passion for <span class="bg-red-600 px-2 py-1 rounded-lg">quality</span>, <span class="bg-red-600 px-2 py-1 rounded-lg">flavor</span>, and <span class="bg-red-600 px-2 py-1 rounded-lg">tradition</span>. Today, we blend time-honored recipes with modern techniques to create biltong that's both authentic and unforgettable.<br><br>
+          We believe in supporting local farmers, using only the best cuts of beef, and slow-curing our biltong to perfection. Join us as we grow, one delicious bite at a time!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section: Apple-style Carousel -->
+  <section class="py-20 relative z-10">
+    <div class="container mx-auto px-2 md:px-6">
+      <h2 class="text-4xl font-bold text-center text-white mb-12 drop-shadow text-shadow">Our Biltong Selection</h2>
+      <div class="carousel" id="biltong-carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <img src="images/BiltongStokkies.jpg" alt="Biltong Stokkies" class="carousel-img" />
+            <h3 class="text-3xl font-semibold text-white mb-2 drop-shadow text-shadow">Biltong Stokkies</h3>
+            <p class="text-lg text-white text-center drop-shadow text-shadow">Classic, chewy sticks of biltong, perfect for snacking on the go.</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Sliced_Biltong.jpg" alt="Sliced Biltong" class="carousel-img" />
+            <h3 class="text-3xl font-semibold text-white mb-2 drop-shadow text-shadow">Sliced Biltong</h3>
+            <p class="text-lg text-white text-center drop-shadow text-shadow">Tender, thinly sliced biltong with a rich, savory flavor in every bite.</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Beef_jerky (1).jpg" alt="Beef Jerky" class="carousel-img" />
+            <h3 class="text-3xl font-semibold text-white mb-2 drop-shadow text-shadow">Beef Jerky</h3>
+            <p class="text-lg text-white text-center drop-shadow text-shadow">A modern take on a classic favorite, seasoned and dried to perfection.</p>
+          </div>
+        </div>
+        <div class="carousel-dots mt-4" id="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Centered Card -->
+  <section id="contact" class="py-20 flex justify-center items-center relative z-10">
+    <div class="max-w-xl w-full mx-auto p-10 flex flex-col items-center text-center">
+      <h2 class="text-3xl font-bold text-white mb-4 drop-shadow text-shadow">Contact Us</h2>
+      <ul class="text-lg text-white mb-4 drop-shadow text-shadow">
+        <li><span class="font-semibold text-red-200">Address:</span> Chitungwiza</li>
+        <li><span class="font-semibold text-red-200">Phone:</span> <a href="tel:+263771569010" class="underline hover:text-red-300 transition">+263771569010</a></li>
+      </ul>
+      <a href="tel:+263771569010" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-bold text-lg shadow hover:bg-red-700 transition">Call Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full flex justify-start items-center py-6 px-8 text-left text-white font-bold shadow-inner border-t border-gray-100 mt-12 relative z-10">
+    <span class="text-xl text-shadow tracking-widest">CLOCK_ZW | DIGITAL CRAFTSMAN</span>
+  </footer>
+
+  <script>
+    // Apple-style auto-sliding carousel (5s interval)
+    const track = document.getElementById('carousel-track');
+    const slides = Array.from(track.children);
+    const dotsContainer = document.getElementById('carousel-dots');
+    let current = 0;
+    let interval = null;
+
+    function updateCarousel(idx) {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === idx);
+      });
+    }
+
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => {
+        current = i;
+        updateCarousel(current);
+        resetInterval();
+      };
+      dotsContainer.appendChild(dot);
+    });
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      updateCarousel(current);
+    }
+    function prevSlide() {
+      current = (current - 1 + slides.length) % slides.length;
+      updateCarousel(current);
+    }
+    function resetInterval() {
+      clearInterval(interval);
+      interval = setInterval(nextSlide, 5000);
+    }
+    // Wheel event
+    track.addEventListener('wheel', (e) => {
+      if (e.deltaY > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      resetInterval();
+    });
+    // Touch swipe for mobile
+    let startX = 0;
+    track.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchend', (e) => {
+      const endX = e.changedTouches[0].clientX;
+      if (endX - startX > 40) prevSlide();
+      if (startX - endX > 40) nextSlide();
+      resetInterval();
+    });
+    // Start auto-slide
+    interval = setInterval(nextSlide, 5000);
+    // Initial state
+    updateCarousel(current);
+  </script>
+</body>
+</html> 
